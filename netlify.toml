@@ -11,3 +11,10 @@ to = "https://us.i.posthog.com/:splat"
 host = "us.i.posthog.com"
 status = 200
 force = true
+
+[build]
+command = "npm run build"
+publish = ".next"
+
+[functions]
+included_files = [".next/*.json"]
